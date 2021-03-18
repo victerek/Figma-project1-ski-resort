@@ -1,0 +1,31 @@
+@mixin responsive ($breakpoint) {
+  @if $breakpoint==mobile-sm {
+    @media screen and (min-width: 15em) {
+      @content;
+    }
+  }
+  @if $breakpoint==mobile-md {
+    @media screen and (min-width: 27em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tablet-sm {
+    @media screen and (min-width: 40em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tablet-md {
+    @media screen and (min-width: 48em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==desktop-sm {
+    @media screen and (min-width: 60em) {
+      @content;
+    }
+  }
+
+}
